@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+		  http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+         version="2.5">
+<servlet>
+    <servlet-name>ProductDiscount</servlet-name>
+    <servlet-class>com.codegym.ProductDiscountServlet</servlet-class>
+</servlet>
+    <servlet-mapping>
+        <servlet-name>ProductDiscount</servlet-name>
+        <url-pattern>/index</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Discount</servlet-name>
+        <servlet-class>com.codegym.DiscountServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Discount</servlet-name>
+        <url-pattern>/display_discount</url-pattern>
+    </servlet-mapping>
+</web-app>
